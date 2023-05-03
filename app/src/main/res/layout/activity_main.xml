@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#11FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/etFirstvalue"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_margin="10dp"
+        android:hint="enter first number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+  <EditText
+        android:id="@+id/etSecondvalue"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:hint="enter second number"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnAddbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="ADD" />
+
+        <Button
+            android:id="@+id/btnSubbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="SUBST" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnModulusbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="Mod" />
+
+        <Button
+            android:id="@+id/btnMultiplybutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="Multi" />
+
+
+    </LinearLayout>
+
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+         android:layout_marginHorizontal="5dp"
+         android:layout_marginVertical="5dp">
+
+         <Button
+             android:id="@+id/btnResultbutton"
+             android:layout_width="322dp"
+             android:layout_height="113dp"
+             android:layout_marginHorizontal="10dp"
+             android:layout_weight="1"
+             android:backgroundTint="@color/black"
+             android:text="Result" />
+
+     </LinearLayout>
+
+
+ </LinearLayout>
